@@ -8,6 +8,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   padding: 0 1.5em; /* 1.5ems of space on the right and left */
 }
 
@@ -15,12 +16,24 @@ nav {
   font-family: "Bungee", sans-serif;
 }
 
-.write-tweet {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
+.icon-container {
+  margin-left: 80px; /* Add a margin to the left to move the icon to the right */
+  position: relative;
+  bottom: 0;
+}
+.write-tweet > * {
+  flex: 1;
+  margin-bottom: 0.5em;
+}
+.write-tweet > * {
+  flex: 1;
 }
 
-.write-tweet strong {
-  font-weight: bold;
+header {
+  padding-top: 120px; /* Add a top padding to move the header below the fixed nav bar */
+  text-align: center; /* Center the elements inside the header */
+}
+
+header img {
+  width: 100px; /* Adjust the width of the avatar image as needed */
 }
