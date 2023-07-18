@@ -1,15 +1,14 @@
-/* nav.css */
-
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: #3558cb;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0 24px; /* 1.5ems of space on the right and left */
+  padding: 0 24px;
+  z-index: 1;
 }
 
 .logo {
@@ -20,7 +19,7 @@ nav {
 }
 
 .icon-container {
-  margin-left: 80px; /* Add a margin to the left to move the icon to the right */
+  margin-left: 80px;
   position: relative;
   bottom: 0;
   animation: fadeInOut 2s infinite;
@@ -48,23 +47,48 @@ nav .fa-solid.fa-angles-down {
 }
 
 header {
-  padding-top: 120px; /* Add a top padding to move the header below the fixed nav bar */
-  text-align: center; /* Center the elements inside the header */
+  padding-top: 120px;
+  text-align: center;
 }
 
 header img {
-  width: 100px; /* Adjust the width of the avatar image as needed */
+  width: 100px;
 }
 
-.trademark {
+.mySignature {
   color: black;
-  font-size: 12px; /* Adjust the font size as needed */
-  vertical-align: middle; /* Vertically align the trademark with the text */
-  margin-left: 5px; /* Add some spacing to the left of the trademark */
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .fa-solid.fa-crow {
-  /* Your styles for the new crow icon */
-  font-size: 24px; /* Adjust the size of the icon */
-  margin-right: 8px; /* Adjust the spacing between the icon and the logo (reduce it to move the icon closer) */
+  padding-left: 1.5em;
+  font-size: 24px;
+  margin-right: 4px;
+  animation: headshake 5s infinite;
+}
+
+@keyframes headshake {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(6deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }

@@ -1,28 +1,28 @@
-/* Apply styles to the header element */
-header {
-  height: 400px; /* Set the visible portion of the header to 400px */
-  width: 100%; /* Make the header 100% the width of its parent container */
+
+body > header {
+  height: 400px; 
+  width: 100%; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center the elements vertically */
-  align-items: center; /* Center the elements horizontally */
-  background-color: #080024; /* Set the background color of the header */
-  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png"); /* Add a background image */
+  justify-content: center; 
+  align-items: center; 
+  background-color: #080024; 
+  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png"); 
 }
 
 header img {
-  width: 200px; /* Adjust the width of the avatar image as needed */
-  height: 200px; /* Adjust the height of the avatar image as needed */
-  margin-bottom: -30px; /* Add some spacing below the avatar */
-  margin-top: 35px; /* Add some spacing above the avatar */
+  width: 200px; 
+  height: 200px; 
+  margin-bottom: -30px; 
+  margin-top: 35px; 
 }
 
 header h2 {
-  color: #ffffff; /* Set the text color of the name */
-  font-size: 38px; /* Adjust the font size of the name */
+  color: #ffffff; 
+  font-size: 38px;
   font-weight: 300;
 }
 
 .bold-first-name {
-  font-weight: bold; /* Add font weight to the first name */
+  font-weight: bold;
 }
