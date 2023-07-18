@@ -49,9 +49,14 @@
   color: #ced3e5;
 }
 
+.tweet-info .user-name {
+  margin-top: -8px;
+}
+
 .tweet-content {
   padding: 10px;
   font-size: 18px;
+  border-bottom: 1px solid #ccc;
 }
 
 .tweet footer {

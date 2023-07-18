@@ -62,8 +62,7 @@
   <!-- Main/New Tweet container  -->
   <main class="container">
     <section class="new-tweet">
-      <h2>New Tweet</h2>
-      <form action="/tweets/" method="POST"> 
+          <form action="/tweets/" method="POST"> 
         <textarea name="text" id="tweet-text" class="tweet-text" placeholder="What are you humming about?"></textarea>
         <div class="under-tweet-input">
           <button type="submit">
@@ -77,36 +76,13 @@
 
      <!-- Tweets Container -->
      <section id="tweet-section" class="tweet-container">
-     <article class="tweet">
-       <header>
-         <div class="header-content">
-           <img class='tweet-avatar' src="./images/avatar1.png" alt="User Avatar 1">
-           <div class="tweet-info">
-             <span class="user-name">Neil Gaiman</span>
-             <span class="handle">@NeilG</span>
-           </div>
-         </div>
-       </header>
-       <div class="tweet-content">
-         <p>When something goes wrong, the first thing I always think is, it is Loki fault. It saves a lot of time.</p>
-       </div>
-       <hr>
-       <footer>
-         <span class="tweet-date">2 hours ago</span>
-         <div class="tweet-icons">
-           <i class="fas fa-heart"></i>
-           <i class="fas fa-comment"></i>
-           <i class="fas fa-retweet"></i>
-         </div>
-       </footer>
-     </article>
       <article class="tweet">
         <header>
           <div class="header-content">
-            <img class='tweet-avatar' src="./images/avatar2.png" alt="User Avatar 1">
+            <img class='tweet-avatar' src="./images/avatar1.png" alt="User Avatar 1">
             <div class="tweet-info">
-              <span class="user-name">Neil Gaiman2</span>
-              <span class="handle">@NeilG2</span>
+              <span class="handle">@NeilG</span>
+              <span class="user-name">Neil Gaiman</span>
             </div>
           </div>
         </header>
@@ -123,7 +99,31 @@
           </div>
         </footer>
       </article>
-    </section>
+       <article class="tweet">
+         <header>
+           <div class="header-content">
+             <img class='tweet-avatar' src="./images/avatar2.png" alt="User Avatar 1">
+             <div class="tweet-info">
+               <span class="handle">@NeilG2</span>
+               <span class="user-name">Neil Gaiman2</span>
+             </div>
+           </div>
+         </header>
+         <div class="tweet-content">
+           <p>When something goes wrong, the first thing I always think is, it is Loki fault. It saves a lot of time.</p>
+         </div>
+         <hr>
+         <footer>
+           <span class="tweet-date">2 hours ago</span>
+           <div class="tweet-icons">
+             <i class="fas fa-heart"></i>
+             <i class="fas fa-comment"></i>
+             <i class="fas fa-retweet"></i>
+           </div>
+         </footer>
+       </article>
+     </section>
+ 
   </main>
 </body>
 </html>
