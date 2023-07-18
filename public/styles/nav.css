@@ -15,7 +15,8 @@ nav {
 .logo {
   font-family: "Bungee", sans-serif;
   font-size: 38px;
-  margin-left: 1.5em;
+  display: flex;
+  align-items: center;
 }
 
 .icon-container {
@@ -65,5 +66,5 @@ header img {
 .fa-solid.fa-crow {
   /* Your styles for the new crow icon */
   font-size: 24px; /* Adjust the size of the icon */
-  margin-right: 900px; /* Adjust the spacing between the icon and the logo (reduce it to move the icon closer) */
+  margin-right: 8px; /* Adjust the spacing between the icon and the logo (reduce it to move the icon closer) */
 }
