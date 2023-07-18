@@ -11,20 +11,18 @@ header {
 }
 
 header img {
-  width: 150px; /* Adjust the width of the avatar image as needed */
-  height: 150px; /* Adjust the height of the avatar image as needed */
-  border-radius: 50%; /* Make the avatar image circular */
-  margin-bottom: 20px; /* Add some spacing below the avatar */
+  width: 200px; /* Adjust the width of the avatar image as needed */
+  height: 200px; /* Adjust the height of the avatar image as needed */
+  margin-bottom: -30px; /* Add some spacing below the avatar */
+  margin-top: 35px; /* Add some spacing above the avatar */
 }
 
 header h2 {
   color: #ffffff; /* Set the text color of the name */
-  font-size: 24px; /* Adjust the font size of the name */
-  font-weight: 600; /* Add some font weight to the name */
+  font-size: 38px; /* Adjust the font size of the name */
+  font-weight: 300;
 }
 
-.trademark {
-  font-size: 12px; /* Adjust the font size as needed */
-  vertical-align: middle; /* Vertically align the trademark with the text */
-  margin-left: 5px; /* Add some spacing to the left of the trademark */
+.bold-first-name {
+  font-weight: bold; /* Add font weight to the first name */
 }

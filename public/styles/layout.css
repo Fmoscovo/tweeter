@@ -64,3 +64,9 @@ body {
 nav span {
   font-family: "Bungee", sans-serif;
 }
+
+main.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f4f1ec; /* Same background color as body */
+}

@@ -9,24 +9,41 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0 1.5em; /* 1.5ems of space on the right and left */
+  padding: 0 24px; /* 1.5ems of space on the right and left */
 }
 
 .logo {
   font-family: "Bungee", sans-serif;
+  font-size: 38px;
+  margin-left: 1.5em;
 }
 
 .icon-container {
   margin-left: 80px; /* Add a margin to the left to move the icon to the right */
   position: relative;
   bottom: 0;
+  animation: fadeInOut 2s infinite;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+nav .fa-solid.fa-angles-down {
+  font-size: 1.5rem;
+  opacity: 0.7;
 }
 .write-tweet > * {
   flex: 1;
-  margin-bottom: 0.5em;
-}
-.write-tweet > * {
-  flex: 1;
+  margin-bottom: 8px;
+  margin-top: -0px;
+  margin-right: 1.5em;
 }
 
 header {
@@ -36,4 +53,17 @@ header {
 
 header img {
   width: 100px; /* Adjust the width of the avatar image as needed */
+}
+
+.trademark {
+  color: black;
+  font-size: 12px; /* Adjust the font size as needed */
+  vertical-align: middle; /* Vertically align the trademark with the text */
+  margin-left: 5px; /* Add some spacing to the left of the trademark */
+}
+
+.fa-solid.fa-crow {
+  /* Your styles for the new crow icon */
+  font-size: 24px; /* Adjust the size of the icon */
+  margin-right: 900px; /* Adjust the spacing between the icon and the logo (reduce it to move the icon closer) */
 }
