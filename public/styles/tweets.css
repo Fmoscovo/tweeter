@@ -43,7 +43,7 @@
 }
 
 .tweet-info .handle {
-  color: #0537ef;
+  color: #002aff;
   font-weight: bold;
   margin-right: 20px; /* Push the handle to the right */
 }
@@ -51,15 +51,15 @@
 .tweet-info .user-name {
   margin-top: -10px;
   font-size: 22px;
-  margin-right: auto; /* Push the user name to the left */
+  margin-right: auto;
+  font-weight: bold; /* Push the user name to the left */
 }
 
 .tweet-content {
   padding: 10px;
-  font-size: 18px; /* Adjust the font size of the content */
+  font-size: 20px; /* Adjust the font size of the content */
   border-bottom: 3px solid #000000;
-  
-}
+   }
 
 .tweet-content strong {
   color: rgb(112, 112, 212);
@@ -93,17 +93,17 @@
 }
 
 .tweet-icons i:hover {
-  color: rgb(65, 2, 240); /* Default color for all icons */
+  color: rgb(116, 112, 125);
 }
 
 .tweet-icons i.fa-flag:hover {
-  color: blue; /* Custom color for flag icon hover */
+  color: blue;
 }
 
 .tweet-icons i.fa-retweet:hover {
-  color: rgb(33, 255, 52); /* Custom color for retweet icon hover */
+  color: rgb(33, 255, 52);
 }
 
 .tweet-icons i.fa-heart:hover {
-  color: red; /* Custom color for heart icon hover */
+  color: red;
 }

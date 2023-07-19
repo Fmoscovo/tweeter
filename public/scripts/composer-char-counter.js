@@ -2,7 +2,7 @@ $(document).ready(function() {
   const $counter = $('.counter');
   const maxCharacters = 140;
 
-  const colorScale = [
+  const colors = [
     { count: 140, color: '#0000FF' },
     { count: 120, color: '#1E90FF' },
     { count: 100, color: '#00BFFF' },
@@ -33,12 +33,12 @@ $(document).ready(function() {
   });
 
   function getColorForCharacterCount(count) {
-    for (let i = 0; i < colorScale.length; i++) {
-      if (count >= colorScale[i].count) {
-        return colorScale[i].color;
+    for (let i = 0; i < colors.length; i++) {
+      if (count >= colors[i].count) {
+        return colors[i].color;
       }
     }
 
-    return colorScale[0].color; // Default color
+    return colors[0].color; // Default color
   }
 });
