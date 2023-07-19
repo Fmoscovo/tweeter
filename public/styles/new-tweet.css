@@ -1,48 +1,58 @@
+main.container {
+  width: 90%;
+  margin: 0 auto; /* Center align the container */
+  background-color: inherit; /* Same color as the body element */
+}
+
 .new-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
-  margin-top: 50px;
-  margin-left: 10px; 
-  margin-right: 10px; 
+  margin: 50px 10px 24px;
   background-color: transparent;
- 
+  font-family: "Source Sans 3", sans-serif;
 }
+
 .new-tweet h2 {
-  font-size: 48px; 
-  margin-top: 3.2px; 
+  font-size: 48px;
+  margin-top: 3.2px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 70%;
+  margin-left: auto; /* Center align the form from the sides */
+  margin-right: auto; /* Center align the form from the sides */
 }
 
 .tweet-text {
   border: none;
-  border-bottom: 6px solid #545149;
+  border-bottom: 1px solid #545149; /* Add a bottom border (line) */
   background-color: transparent;
   resize: none;
   font-weight: bold;
   line-height: 19.5px;
   font-family: "Source Sans 3", sans-serif;
   height: 70px;
+  border-bottom: 3px solid #000000;
 }
 
 .tweet-text::placeholder {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  line-height: 50px;
 }
 
 .under-tweet-input {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Align button on left and counter on right */
   margin-top: 6px;
-  font-size: 19.5px; 
+  font-size: 19.5px;
   align-items: baseline;
-  padding-top: 5px; 
+  padding-top: 5px;
 }
 
 button {
@@ -64,28 +74,51 @@ button {
   color: #002aff;
 }
 
-.fa-solid.fa-caret-right {
-  
-  color: #bcf000; 
+.fa-caret-right {
+  color: #bcf000;
   padding-right: 2px;
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {2
-    opacity: 0.7;
-  }
-}
-
 .fa-fade {
-  animation: fadeInOut 2s infinite; 
+  animation: fadeInOut 2s infinite;
 }
 
 .counter.invalid {
   color: red;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  90% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -14,15 +15,10 @@ html {
 
 body {
   color: #45433c;
-  background-color: #ecf4ee;
+  background-color: #f4f1ec;
   font-size: 24px;
-  font-family: "Source Sans 3", sans-serif; 
+  font-family: "Source Sans 3", sans-serif;
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
 
 @font-face {
   font-family: "Source Sans 3";
@@ -63,20 +59,13 @@ nav span {
 main.container {
   width: 90%;
   margin: 0 auto;
-  background-color: #f4f1ec; 
-}
-
-body {
-  color: #45433c;
-  background-color: #f4f1ec; 
-  font-size: 24px;
-  font-family: "Source Sans 3", sans-serif; 
+  background-color: #f4f1ec;
 }
 
 nav {
   height: 120px;
   width: 100%;
-  background-color: #f4f1ec; 
+  background-color: #f4f1ec;
   color: #ffffff;
   display: flex;
   justify-content: space-between;

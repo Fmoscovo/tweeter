@@ -1,129 +1,154 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
 
-<head>
-  <!-- Meta Information -->
-  <title>Tweeter - Home Page</title>
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
-  <!-- External CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/header.css" type="text/css" /> 
-  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" /> 
-  <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <!-- Font Awesome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Additional fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Additional fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap"
-    rel="stylesheet" />
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- External JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+  </head>
 
-  <!-- App JS -->
-  <script type="text/javascript" src="/scripts/client.js"></script>
-  <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-</head>
-
-<body>
-   <nav>
-    <span class="logo">
-      <i class="fa-solid fa-crow" style="color: #000000;"></i> 
-      tweeter!
-      <span class="mySignature">&#5792;&#5847;</span>
-    </span>
-    <div class="write-tweet">
-      <p>
-        <strong>Write</strong> a new tweet
-        <p class="icon-container">
-          <i class="fa-solid fa-angles-down fa-fade" style="color: #e4f500;"></i>
-        </p>
-      </p>
-    </div>
-  </nav>
-
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2><span class="bold-first-name">Filipe</span> Moscovo</h2>
-    </div>
-  </header>
-
-  <!-- Main/New Tweet container  -->
-  <main class="container">
-    <section class="new-tweet">
-          <form action="/tweets/" method="POST"> 
-        <textarea name="text" id="tweet-text" class="tweet-text" placeholder="What are you humming about?"></textarea>
-        <div class="under-tweet-input">
-          <button type="submit">
-            <i class="fa-solid fa-caret-right fa-fade" style="color: #bcf000;"></i>
-            Tweet!
-          </button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+  <body>
+    <nav>
+      <span class="logo">
+        <i class="fa-solid fa-crow" style="color: #000000"></i>
+        tweeter!
+        <span class="mySignature">&#5792;&#5847;</span>
+      </span>
+      <div class="write-tweet">
+        <p><strong>Write</strong> a new tweet</p>
+        <div class="icon-container">
+          <i class="fa-solid fa-angles-down fa-fade" style="color: #e4f500"></i>
         </div>
-      </form>
-    </section>
+      </div>
+    </nav>
 
-     <!-- Tweets Container -->
-     <section id="tweet-section" class="tweet-container">
-      <article class="tweet">
-        <header>
-          <div class="header-content">
-            <img class='tweet-avatar' src="./images/avatar1.png" alt="User Avatar 1">
+    <header class="header-container">
+      <div>
+        <img class="header-image" src="/images/profile-hex.png" />
+      </div>
+      <div>
+        <h2 class="header-title">
+          <span class="bold-first-name">Filipe</span> Moscovo
+        </h2>
+      </div>
+    </header>
+
+    <!-- Main/New Tweet container  -->
+    <main class="container">
+      <section class="new-tweet">
+        <form action="/tweets/" method="POST">
+          <textarea
+            name="text"
+            id="tweet-text"
+            class="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <div class="under-tweet-input">
+            <button type="submit">
+              <i
+                class="fa-solid fa-caret-right fa-fade"
+                style="color: #bcf000"
+              ></i>
+              Tweet!
+            </button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+
+      <!-- Tweets Container -->
+      <section id="tweet-section" class="tweet-container">
+        <article class="tweet">
+          <header>
+            <img
+              class="tweet-avatar"
+              src="./images/avatar1.png"
+              alt="User Avatar 1"
+            />
             <div class="tweet-info">
-              <span class="handle">@NeilG</span>
               <span class="user-name">Neil Gaiman</span>
+              <span class="handle">@neilg</span>
             </div>
+          </header>
+          <div class="tweet-content">
+            <p>
+              When something goes wrong, the first thing I always think is, it
+              is Loki's fault. It saves a lot of time! <strong>#loki #norsemythology</strong> 
+            </p>
           </div>
-        </header>
-        <div class="tweet-content">
-          <p>When something goes wrong, the first thing I always think is, it is Loki fault. It saves a lot of time.</p>
-        </div>
-        <hr>
-        <footer>
-          <span class="tweet-date">2 hours ago</span>
-          <div class="tweet-icons">
-            <i class="fas fa-heart"></i>
-            <i class="fas fa-comment"></i>
-            <i class="fas fa-retweet"></i>
+          <footer class="tweet-footer">
+            <div class="tweet-date">2 hours ago</div>
+            <div class="tweet-icons">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+            </div>
+          </footer>
+        </article>
+        <article class="tweet">
+          <header>
+            <img
+              class="tweet-avatar"
+              src="./images/avatar2.png"
+              alt="User Avatar 2"
+            />
+            <div class="tweet-info">
+              <span class="user-name">Linda Hogan</span>
+              <span class="handle">@lindah</span>
+            </div>
+          </header>
+          <div class="tweet-content">
+            <p>Suddenly, all of my ancestors are behind me. Be still, they say. Watch and listen you are the result of the love of thousands! <strong> #ancestors #love</strong></p>
+
+            </p>
           </div>
-        </footer>
-      </article>
-       <article class="tweet">
-         <header>
-           <div class="header-content">
-             <img class='tweet-avatar' src="./images/avatar2.png" alt="User Avatar 1">
-             <div class="tweet-info">
-               <span class="handle">@NeilG2</span>
-               <span class="user-name">Neil Gaiman2</span>
-             </div>
-           </div>
-         </header>
-         <div class="tweet-content">
-           <p>When something goes wrong, the first thing I always think is, it is Loki fault. It saves a lot of time.</p>
-         </div>
-         <hr>
-         <footer>
-           <span class="tweet-date">2 hours ago</span>
-           <div class="tweet-icons">
-             <i class="fas fa-heart"></i>
-             <i class="fas fa-comment"></i>
-             <i class="fas fa-retweet"></i>
-           </div>
-         </footer>
-       </article>
-     </section>
- 
-  </main>
-</body>
+          <footer class="tweet-footer">
+            <div class="tweet-date">5 hours ago</div>
+            <div class="tweet-icons">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-comment"></i>
+              <i class="fas fa-retweet"></i>
+            </div>
+          </footer>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

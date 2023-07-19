@@ -1,24 +1,24 @@
-
-body > header {
-  height: 400px; 
-  width: 100%; 
+.header-container {
+  height: 520px; /* 400px (desired visible height) + 120px (nav height) */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  background-color: #080024; 
-  background-image: url("https://www.transparenttextures.com/patterns/binding-light.png"); 
+  justify-content: center;
+  align-items: center;
+  background-color: #000a3b;
+  padding-top: 120px; /* equal to the nav height */
+  background-image: url("https://www.transparenttextures.com/patterns/grey-jean.png");
 }
 
-header img {
-  width: 200px; 
-  height: 200px; 
-  margin-bottom: -30px; 
-  margin-top: 35px; 
+.header-image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: -30px;
+  margin-top: 35px;
 }
 
-header h2 {
-  color: #ffffff; 
+.header-title {
+  color: #ffffff;
   font-size: 38px;
   font-weight: 300;
 }

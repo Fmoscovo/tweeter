@@ -1,13 +1,13 @@
 nav {
   height: 120px;
   width: 100%;
-  background-color: #3558cb;
+  background-color: #4056a1;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding: 0 24px;
+  padding: 0 1.5em;
   z-index: 1;
 }
 
@@ -19,26 +19,11 @@ nav {
 }
 
 .icon-container {
-  margin-left: 80px;
+  margin-left: 80px; /* Adjust the postion of the Arrow if I need*/
   position: relative;
   bottom: 0;
-  animation: fadeInOut 2s infinite;
 }
-@keyframes fadeInOut {
-  0% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.7;
-  }
-}
-nav .fa-solid.fa-angles-down {
-  font-size: 1.5rem;
-  opacity: 0.7;
-}
+
 .write-tweet > * {
   flex: 1;
   margin-bottom: 8px;
@@ -46,27 +31,11 @@ nav .fa-solid.fa-angles-down {
   margin-right: 1.5em;
 }
 
-header {
-  padding-top: 120px;
-  text-align: center;
-}
-
-header img {
-  width: 100px;
-}
-
-.mySignature {
-  color: black;
-  font-size: 12px;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
 .fa-solid.fa-crow {
   padding-left: 1.5em;
   font-size: 24px;
   margin-right: 4px;
-  animation: headshake 5s infinite;
+  animation: headshake 2s infinite;
 }
 
 @keyframes headshake {
@@ -91,4 +60,11 @@ header img {
   100% {
     transform: rotate(0);
   }
+}
+
+.mySignature {
+  color: black;
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
 }

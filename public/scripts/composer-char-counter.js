@@ -1,23 +1,44 @@
-    $(document).ready(function() {
-      const $counter = $('.counter');
-      const maxCharacters = 140;
-  
-      $('.new-tweet textarea').on('input', function() {
-        const inputLength = $(this).val().length;
-        const charactersLeft = maxCharacters - inputLength;
-        $counter.text(charactersLeft); 
-        if (charactersLeft < 0) {
-          $counter.addClass('invalid');
-        } else {
-          $counter.removeClass('invalid');
-        }
+$(document).ready(function() {
+  const $counter = $('.counter');
+  const maxCharacters = 140;
+
+  const colorScale = [
+    { count: 140, color: '#0000FF' },
+    { count: 120, color: '#1E90FF' },
+    { count: 100, color: '#00BFFF' },
+    { count: 80, color: '#00CED1' },
+    { count: 60, color: '#32CD32' },
+    { count: 40, color: '#FFA500' }, 
+    { count: 20, color: '#FF8C00' },
+    { count: 0, color: '#FF0000' }
+  ];
+
+  $('.new-tweet textarea').on('input', function() {
+    const inputLength = $(this).val().length;
+    const charactersLeft = maxCharacters - inputLength;
+    $counter.text(charactersLeft);
+
+    if (charactersLeft < 0) {
+      $counter.css({
+        color: '#FF0000', 
+        animation: 'shake 1s infinite'
       });
-    });
+    } else {
+      const color = getColorForCharacterCount(charactersLeft);
+      $counter.css({
+        color: color,
+        animation: 'none'
+      });
+    }
+  });
 
-    //.val() -> .val() is used to get the value of form elements such as input, select and textarea.
+  function getColorForCharacterCount(count) {
+    for (let i = 0; i < colorScale.length; i++) {
+      if (count >= colorScale[i].count) {
+        return colorScale[i].color;
+      }
+    }
 
-    //.text() -> .text() is used to get the text content of an element.
-     
-    //.addClass() -> .addClass() is used to add one or more class names to the selected elements.
-
-    //.removeClass() -> .removeClass() is used to remove one or more class names from the selected elements.
+    return colorScale[0].color; // Default color
+  }
+});

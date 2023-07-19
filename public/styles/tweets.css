@@ -4,74 +4,106 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  margin: 10px;
   background-color: transparent;
-}
-
-#tweet-section {
-  background-image: none;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .tweet {
   display: flex;
   flex-direction: column;
   border: 3px solid black;
-  width: 80%;
-  padding: 20px;
-  margin-top: 20px;
+  width: 70%; /* Adjust the width to make it smaller */
+  padding: 10px; /* Adjust the padding to reduce the size */
+  margin-top: 10px; /* Adjust the margin to create spacing between tweets */
   box-sizing: border-box;
   background-color: transparent;
 }
 
 .tweet:hover {
-  box-shadow: 10px 10px #c8c8c8;
+  box-shadow: 5px 5px 10px #c8c8c8;
+  transition: box-shadow 0.3s ease;
 }
 
-.header-content {
+.tweet header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .tweet-avatar {
-  width: 50px;
-  height: 50px;
+  width: 77px; /* Adjust the size of the avatar */
+  height: 65px; /* Adjust the size of the avatar */
   margin-right: 10px;
+  margin-top: 2px;
 }
 
 .tweet-info {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-grow: 1; /* Allow the tweet-info to grow and push handle to the right */
 }
 
 .tweet-info .handle {
-  color: #ced3e5;
+  color: #0537ef;
+  font-weight: bold;
+  margin-right: 20px; /* Push the handle to the right */
 }
 
 .tweet-info .user-name {
-  margin-top: -8px;
+  margin-top: -10px;
+  font-size: 22px;
+  margin-right: auto; /* Push the user name to the left */
 }
 
 .tweet-content {
   padding: 10px;
-  font-size: 18px;
-  border-bottom: 1px solid #ccc;
+  font-size: 18px; /* Adjust the font size of the content */
+  border-bottom: 3px solid #000000;
+  
 }
 
-.tweet footer {
+.tweet-content strong {
+  color: rgb(112, 112, 212);
+}
+
+.tweet-footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  font-size: 15px;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 14px;
 }
 
-.tweet-icons i {
-  padding: 5px;
-  color: #4056a1;
-  font-size: 23px;
+.tweet-footer .tweet-date {
+  margin-right: auto; /* Push the tweet date to the left */
+}
+
+.tweet-footer .tweet-date {
+  margin-left: 30px;
+  font-size: 18px;
+  /*bold*/
+  font-weight: bold;
+}
+
+.tweet-footer .tweet-icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 .tweet-icons i:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(65, 2, 240); /* Default color for all icons */
+}
+
+.tweet-icons i.fa-flag:hover {
+  color: blue; /* Custom color for flag icon hover */
+}
+
+.tweet-icons i.fa-retweet:hover {
+  color: rgb(33, 255, 52); /* Custom color for retweet icon hover */
+}
+
+.tweet-icons i.fa-heart:hover {
+  color: red; /* Custom color for heart icon hover */
 }
