@@ -53,8 +53,7 @@ $(document).ready(function() {
   function handleScroll() {
     if ($(this).scrollTop() > 200) {
       $backToTop.fadeIn();
-      $compose.fadeOut();
-    } else {
+     } else {
       $backToTop.fadeOut();
       $compose.fadeIn();
     }
