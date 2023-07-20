@@ -11,22 +11,19 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
 
-   
-    $('#error-message').slideUp(function() {
-      $(this).text('');
-    });
-
     let tweetText = $(this).find('textarea').val();
 
     if (!tweetText || tweetText.trim() === '') {
-    
-      $('#error-message').text('Oops, looks like this tweet took a vacation and forgot to pack its content!').slideDown();
+      $('#error-message').text('Oops, looks like this tweet took a vacation and forgot to pack its content!');
+      $('#error-message').slideDown();
+      setTimeout(function() { $('#error-message').slideUp(); }, 7000);
       return;
     }
 
     if (tweetText.length > 140) {
-      
-      $('#error-message').text('TLDR...Lets keep it under 140 characters, shall we?').slideDown();
+      $('#error-message').text('TLDR...Lets keep it under 140 characters, shall we?');
+      $('#error-message').slideDown();
+      setTimeout(function() { $('#error-message').slideUp(); }, 7000);
       return;
     }
 
@@ -37,6 +34,7 @@ $(document).ready(function() {
       method: 'POST',
       data: formData,
       success: function(response) {
+        $('#error-message').slideUp();
         fetchLatestTweets(); 
         $('form').trigger('reset');
         $('.counter').text('140'); 
