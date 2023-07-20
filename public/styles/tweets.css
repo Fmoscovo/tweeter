@@ -59,7 +59,7 @@
   padding: 10px;
   font-size: 20px; /* Adjust the font size of the content */
   border-bottom: 3px solid #000000;
-   }
+}
 
 .tweet-content strong {
   color: rgb(112, 112, 212);
@@ -74,13 +74,9 @@
 }
 
 .tweet-footer .tweet-date {
-  margin-right: auto; /* Push the tweet date to the left */
-}
-
-.tweet-footer .tweet-date {
   margin-left: 30px;
+  margin-right: auto;
   font-size: 18px;
-  /*bold*/
   font-weight: bold;
 }
 

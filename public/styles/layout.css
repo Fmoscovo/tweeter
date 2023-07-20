@@ -62,15 +62,3 @@ main.container {
   background-color: #f4f1ec;
 }
 
-nav {
-  height: 120px;
-  width: 100%;
-  background-color: #f4f1ec;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  padding: 0 24px;
-  z-index: 1;
-}
