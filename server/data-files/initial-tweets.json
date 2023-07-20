@@ -1,24 +1,24 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "name": "Linda Hogan",
+      "avatars": "/images/avatar2.png",
+      "handle": "@LindaHogan"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "Suddenly, all of my ancestors are behind me. Be still, they say. Watch and listen you are the result of the love of thousands #ancestry"
     },
-    "created_at": 1689648759755
+    "created_at": 1689656388244
   },
   {
     "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
+      "name": "Neil Gaiman",
+      "avatars": "/images/avatar1.png",
+      "handle": "@neilhimself"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Because when something goes wrong, the first thing I always think is, it is Loki’s fault! It saves a lot of time... #norsemythology"
     },
-    "created_at": 1689735159755
+    "created_at": 1689742788244
   }
 ]

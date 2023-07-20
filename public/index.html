@@ -67,7 +67,7 @@
 
     <header class="header-container">
       <div>
-        <img class="header-image" src="/images/profile-hex.png" />
+        <img class="header-image" src="/images/wolf.png" />
       </div>
       <div>
         <h2 class="header-title">
@@ -80,6 +80,8 @@
     <main class="container">
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
+          <div id="error-message" style="display: none"></div>
+
           <textarea
             name="text"
             id="tweet-text"

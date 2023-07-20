@@ -52,6 +52,7 @@ form {
   font-family: "Source Sans 3", sans-serif;
   height: 70px;
   border-bottom: 3px solid #000000;
+  padding-left: 4px;
 }
 
 .tweet-text::placeholder {
@@ -136,4 +137,15 @@ button {
   100% {
     transform: translateX(0);
   }
+}
+
+#error-message {
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+  border-radius: 0.25rem;
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
 }

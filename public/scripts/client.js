@@ -1,18 +1,32 @@
 $(document).ready(function() {
+  // Escaping function
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   loadTweets();
 
   $('form').on('submit', function(event) {
     event.preventDefault();
 
+    // Hide any existing error message
+    $('#error-message').slideUp(function() {
+      $(this).text('');
+    });
+
     let tweetText = $(this).find('textarea').val();
 
     if (!tweetText || tweetText.trim() === '') {
-      alert('Tweet content is not present');
+      // Show an error message
+      $('#error-message').text('Oops, looks like this tweet took a vacation and forgot to pack its content!').slideDown();
       return;
     }
 
     if (tweetText.length > 140) {
-      alert('Tweet content is too long');
+      // Show an error message
+      $('#error-message').text('TLDR...Lets keep it under 140 characters, shall we?').slideDown();
       return;
     }
 
@@ -25,6 +39,7 @@ $(document).ready(function() {
       success: function(response) {
         fetchLatestTweets(); // Fetch the latest tweets after successful submission
         $('form').trigger('reset'); // Reset the form after successful submission
+        $('.counter').text('140'); // Reset the counter after successful submission
       },
       error: function(err) {
         console.error(err);
@@ -33,6 +48,9 @@ $(document).ready(function() {
   });
 
   function createTweetElement(tweet) {
+    // Safe text
+    let safeText = escape(tweet.content.text);
+
     const $tweet = $(`
       <article class="tweet">
         <header>
@@ -43,7 +61,7 @@ $(document).ready(function() {
           </div>
         </header>
         <div class="tweet-content">
-          <p>${tweet.content.text}</p>
+          <p>${safeText}</p>
         </div>
         <footer class="tweet-footer">
           <div class="tweet-date" data-timestamp="${tweet.created_at}"></div>
