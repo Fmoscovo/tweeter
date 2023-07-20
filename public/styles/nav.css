@@ -19,9 +19,10 @@ nav {
 }
 
 .icon-container {
-  margin-left: 80px; /* Adjust the postion of the Arrow if I need*/
+  margin-left: 200px;
   position: relative;
   bottom: 0;
+  padding-left: 50px;
 }
 
 .write-tweet > * {
@@ -67,4 +68,32 @@ nav {
   font-size: 12px;
   vertical-align: middle;
   margin-left: 5px;
+}
+
+.compose-button {
+  padding: 10px 20px;
+  background-color: #4056a1; /* Same color as the nav bar */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: default; /* Default cursor */
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.compose-button span {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.compose-button:hover {
+  background-color: #4056a1; /* Same color as the nav bar on hover */
+  color: #ffffff; /* Keep text color white on hover */
+}
+
+.move-right {
+  margin-top: 5px; /* Adjust this value as needed */
 }

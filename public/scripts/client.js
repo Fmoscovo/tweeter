@@ -123,3 +123,12 @@ $(document).ready(function() {
     });
   }
 });
+
+
+$(document).ready(function() {
+  $('#compose').click(function() {
+    $('.new-tweet').slideToggle('slow', function() {
+      $('#tweet-text').focus();
+    });
+  });
+});
