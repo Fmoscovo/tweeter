@@ -1,7 +1,7 @@
 main.container {
   width: 90%;
-  margin: 0 auto; /* Center align the container */
-  background-color: inherit; /* Same color as the body element */
+  margin: 0 auto; 
+  background-color: inherit; 
 }
 
 .new-tweet {
@@ -30,21 +30,21 @@ button {
 }
 
 button:hover {
-  background-color: #ffffff; /* Original text color */
-  color: #1236ac; /* Original background color */
+  background-color: #ffffff; 
+  color: #1236ac; 
 }
 
 form {
   display: flex;
   flex-direction: column;
   width: 70%;
-  margin-left: auto; /* Center align the form from the sides */
-  margin-right: auto; /* Center align the form from the sides */
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .tweet-text {
   border: none;
-  border-bottom: 1px solid #545149; /* Add a bottom border (line) */
+  border-bottom: 1px solid #545149; 
   background-color: transparent;
   resize: none;
   font-weight: bold;
@@ -64,7 +64,7 @@ form {
 
 .under-tweet-input {
   display: flex;
-  justify-content: space-between; /* Align button on left and counter on right */
+  justify-content: space-between; */
   margin-top: 6px;
   font-size: 19.5px;
   align-items: baseline;
@@ -148,4 +148,22 @@ button {
   margin-bottom: 1em;
   width: 100%;
   text-align: center;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #4056a1; 
+  color: hsl(84, 73%, 51%);
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.back-to-top:hover {
+  background-color: hsl(84, 73%, 51%);
 }

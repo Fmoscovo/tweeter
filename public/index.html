@@ -51,26 +51,24 @@
   </head>
 
   <body>
+    <!-- Nav container / nav.css -->
     <nav>
       <span class="logo">
         <i class="fa-solid fa-crow" style="color: #000000"></i>
         tweeter!
         <span class="mySignature">&#5792;&#5847;</span>
       </span>
-      <!-- <div class="write-tweet">
-        <p><strong>Write</strong> a new tweet</p> -->
       <div class="icon-container">
         <button class="compose-button" id="compose">
           <span><strong>Write</strong> a new tweet</span>
           <i
             class="fa-solid fa-angles-down fa-fade move-right"
-            style="color: #e4f500"
+            style="color:hsl(84, 73%, 51%)"
           ></i>
         </button>
       </div>
-      <!-- </div> -->
     </nav>
-
+        <!-- header of page / header.css -->
     <header class="header-container">
       <div>
         <img class="header-image" src="/images/wolf.png" />
@@ -82,7 +80,7 @@
       </div>
     </header>
 
-    <!-- Main/New Tweet container  -->
+    <!-- main of page/ new-tweet.css  -->
     <main class="container">
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
@@ -98,19 +96,20 @@
             <button type="submit">
               <i
                 class="fa-solid fa-caret-right fa-fade"
-                style="color: #bcf000"
+                style="color:hsl(84, 73%, 51%)"
               ></i>
-              Tweet!
+              &nbsp;Tweet!
             </button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
 
-      <!-- Tweets Container -->
-      <section id="tweets-container" class="tweet-container">
-        <!-- Tweets will be inserted here -->
-      </section>
+      <!-- tweets container / tweets.css-->
+      <section id="tweets-container" class="tweet-container"></section>
+      <button id="back-to-top" class="back-to-top">
+        <i class="fa-solid fa-angles-up"></i>
+      </button>
     </main>
   </body>
 </html>

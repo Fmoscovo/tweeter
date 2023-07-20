@@ -11,7 +11,7 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
 
-    // Hide any existing error message
+   
     $('#error-message').slideUp(function() {
       $(this).text('');
     });
@@ -19,13 +19,13 @@ $(document).ready(function() {
     let tweetText = $(this).find('textarea').val();
 
     if (!tweetText || tweetText.trim() === '') {
-      // Show an error message
+    
       $('#error-message').text('Oops, looks like this tweet took a vacation and forgot to pack its content!').slideDown();
       return;
     }
 
     if (tweetText.length > 140) {
-      // Show an error message
+      
       $('#error-message').text('TLDR...Lets keep it under 140 characters, shall we?').slideDown();
       return;
     }
@@ -37,9 +37,9 @@ $(document).ready(function() {
       method: 'POST',
       data: formData,
       success: function(response) {
-        fetchLatestTweets(); // Fetch the latest tweets after successful submission
-        $('form').trigger('reset'); // Reset the form after successful submission
-        $('.counter').text('140'); // Reset the counter after successful submission
+        fetchLatestTweets(); 
+        $('form').trigger('reset');
+        $('.counter').text('140'); 
       },
       error: function(err) {
         console.error(err);
@@ -48,7 +48,7 @@ $(document).ready(function() {
   });
 
   function createTweetElement(tweet) {
-    // Safe text
+   
     let safeText = escape(tweet.content.text);
 
     const $tweet = $(`
@@ -77,14 +77,14 @@ $(document).ready(function() {
   }
 
   function renderTweets(tweets) {
-    $('#tweets-container').empty(); // Clear the container before rendering
+    $('#tweets-container').empty(); 
 
     tweets.forEach(tweet => {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').prepend($tweet);
     });
 
-    updateTimestamps(); // Call the function to update timestamps
+    updateTimestamps(); 
   }
 
   function loadTweets() {

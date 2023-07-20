@@ -72,11 +72,11 @@ nav {
 
 .compose-button {
   padding: 10px 20px;
-  background-color: #4056a1; /* Same color as the nav bar */
-  color: #ffffff; /* White text */
+  background-color: #4056a1; 
+  color: #ffffff; 
   border: none;
   border-radius: 5px;
-  cursor: default; /* Default cursor */
+  cursor: default; 
   margin-bottom: 0px;
   margin-top: 10px;
   margin-right: 1.5em;
@@ -90,10 +90,10 @@ nav {
 }
 
 .compose-button:hover {
-  background-color: #4056a1; /* Same color as the nav bar on hover */
-  color: #ffffff; /* Keep text color white on hover */
+  background-color: #4056a1; 
+  color: #ffffff; 
 }
 
 .move-right {
-  margin-top: 5px; /* Adjust this value as needed */
+  margin-top: 5px; 
 }

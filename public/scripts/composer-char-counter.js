@@ -42,3 +42,32 @@ $(document).ready(function() {
     return colors[0].color; // Default color
   }
 });
+
+
+$(document).ready(function() {
+  const SCROLL_SPEED = 300;
+  var $backToTop = $('.back-to-top');
+  var $compose = $('#compose');
+  var $composeTextarea = $('#tweet-text');
+
+  function handleScroll() {
+    if ($(this).scrollTop() > 200) {
+      $backToTop.fadeIn();
+      $compose.fadeOut();
+    } else {
+      $backToTop.fadeOut();
+      $compose.fadeIn();
+    }
+  }
+
+  function handleClick(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, SCROLL_SPEED);
+    $('.new-tweet').slideDown('slow', function() {
+      $composeTextarea.focus();
+    });
+  }
+
+  $(window).scroll(handleScroll);
+  $('#back-to-top').click(handleClick);
+});
