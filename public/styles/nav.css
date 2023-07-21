@@ -1,5 +1,5 @@
 nav {
-  height: 85px;
+  height: 75px;
   width: 100%;
   background-color: #4056a1;
   color: #ffffff;
@@ -71,7 +71,7 @@ nav {
 }
 
 .compose-button {
-  padding: 10px 20px;
+  padding: -5px 20px;
   background-color: #4056a1;
   color: #ffffff;
   border: none;
@@ -118,7 +118,7 @@ nav {
 }
 
 /* For extra small devices: */
-@media only screen and (max-width: 574px) {
+@media only screen and (max-width: 768px) {
   .nav {
     height: 70px; /* Make the nav bar smaller */
     padding: 0 1em; /* Reduce padding */
