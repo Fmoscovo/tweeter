@@ -39,7 +39,7 @@ $(document).ready(function() {
       }
     }
 
-    return colors[0].color; // Default color
+    return colors[0].color; 
   }
 });
 

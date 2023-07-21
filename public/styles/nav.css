@@ -109,25 +109,25 @@ nav {
     margin-left: 50px;
   }
   .write-tweet {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align the elements */
+    flex-direction: column; 
+    align-items: center; 
   }
   .compose-button {
-    margin-top: 10px; /* Add a bit of space between elements */
+    margin-top: 10px; 
   }
 }
 
 /* For extra small devices: */
 @media only screen and (max-width: 768px) {
   .nav {
-    height: 70px; /* Make the nav bar smaller */
-    padding: 0 1em; /* Reduce padding */
+    height: 70px; 
+    padding: 0 1em; 
   }
   .logo {
-    font-size: 28px; /* Make the logo smaller */
+    font-size: 28px; 
   }
   .icon-container {
-    margin-left: 20px; /* Reduce margin left */
+    margin-left: 20px; 
   }
   .write-tweet > * {
     margin-bottom: 5px;
@@ -135,7 +135,6 @@ nav {
     margin-right: 1em;
   }
   .compose-button {
-    padding: 5px 10px; /* Make the button smaller */
-    font-size: 14px; /* Make the button text smaller */
-  }
+    padding: 5px 10px; 
+    font-size: 14px; 
 }
