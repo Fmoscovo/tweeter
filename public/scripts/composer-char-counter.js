@@ -12,6 +12,7 @@ $(document).ready(function() {
     { count: 60, color: '#32CD32' },
     { count: 40, color: '#FFA500' }, 
     { count: 20, color: '#FF8C00' },
+    { count: 1, color: '#FF4500' },
     { count: 0, color: '#000000' } 
   ];
   // Event handler for the textarea
@@ -22,7 +23,7 @@ $(document).ready(function() {
 
     if (charactersLeft < 0) {
       $counter.css({
-        color: '#000000', 
+        color: 'red', 
         animation: 'shake 1s infinite'
       });
     } else {
