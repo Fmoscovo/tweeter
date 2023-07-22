@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { 
   const $counter = $('.counter');
   const maxCharacters = 140;
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
     { count: 60, color: '#32CD32' },
     { count: 40, color: '#FFA500' }, 
     { count: 20, color: '#FF8C00' },
-    { count: 0, color: '#FF0000' }
+    { count: 0, color: '#000000' } 
   ];
 
   $('.new-tweet textarea').on('input', function() {
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     if (charactersLeft < 0) {
       $counter.css({
-        color: '#FF0000', 
+        color: '#000000', 
         animation: 'shake 1s infinite'
       });
     } else {
