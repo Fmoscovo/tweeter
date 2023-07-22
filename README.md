@@ -14,7 +14,7 @@ Tweeter is a simple, single-page Twitter clone developed by Lighthouse Labs. Thi
 
 Here's a video demonstration of how Tweeter works:
 
-[[Tweeter Demo Video])](https://youtu.be/maf55bJEvMY)
+https://github.com/Fmoscovo/tweeter/assets/128196275/29213fd7-896a-4350-9135-01a321873899
 
 ### Screenshots
 
