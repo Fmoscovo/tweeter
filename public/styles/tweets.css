@@ -1,3 +1,4 @@
+/* Setting up the styling for the tweet container */
 .tweet-container {
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@
   font-family: "Source Sans 3", sans-serif;
 }
 
+/* Basic styling for each tweet */
 .tweet {
   display: flex;
   flex-direction: column;
@@ -19,16 +21,19 @@
   background-color: transparent;
 }
 
+/* Adding a hover effect to tweets for better UI experience */
 .tweet:hover {
   box-shadow: 5px 5px 10px #c8c8c8;
   transition: box-shadow 0.3s ease;
 }
 
+/* Styling the header of each tweet */
 .tweet header {
   display: flex;
   align-items: center;
 }
 
+/* Styling the tweet avatar */
 .tweet-avatar {
   width: 77px;
   height: 65px;
@@ -36,35 +41,40 @@
   margin-top: 2px;
 }
 
+/* Styling the information section of each tweet */
 .tweet-info {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
+/* Styling the handle and user-name section of each tweet */
 .tweet-info .handle {
   color: #002aff;
   font-weight: bold;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .tweet-info .user-name {
   margin-top: -10px;
   font-size: 22px;
   margin-right: auto;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
+/* Styling the tweet content section */
 .tweet-content {
   padding: 10px;
-  font-size: 20px; 
+  font-size: 20px;
   border-bottom: 3px solid #000000;
 }
 
+/* Special styling for the strong text within tweet content */
 .tweet-content strong {
   color: rgb(112, 112, 212);
 }
 
+/* Styling the footer of each tweet */
 .tweet-footer {
   display: flex;
   justify-content: space-between;
@@ -80,6 +90,7 @@
   font-weight: bold;
 }
 
+/* Styling the tweet icons within each tweet */
 .tweet-footer .tweet-icons {
   display: flex;
   align-items: center;
@@ -88,10 +99,12 @@
   font-size: 20px;
 }
 
+/* Adding hover effect for each tweet icon */
 .tweet-icons i:hover {
   color: rgb(116, 112, 125);
 }
 
+/* Changing the color of specific icons on hover for better UX */
 .tweet-icons i.fa-flag:hover {
   color: blue;
 }
@@ -103,4 +116,3 @@
 .tweet-icons i.fa-heart:hover {
   color: red;
 }
-

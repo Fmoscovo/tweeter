@@ -1,3 +1,5 @@
+/* Styling the header container with a specific height, width, color, background image and padding. 
+It also arranges its child elements in a column and centers them both vertically and horizontally. */
 .header-container {
   height: 357px;
   width: 100%;
@@ -10,19 +12,21 @@
   background-image: url("https://www.transparenttextures.com/patterns/grey-jean.png");
 }
 
+/* Defining the width and height of the header image and giving it a margin */
 .header-image {
   width: 200px;
   height: 200px;
   margin: 35px 0 -30px;
 }
 
+/* Styling the header title with a specific color, font-size, and font-weight */
 .header-title {
   color: #ffffff;
   font-size: 38px;
   font-weight: 300;
 }
 
+/* Making the first name in the header title bold */
 .bold-first-name {
   font-weight: bold;
 }
-

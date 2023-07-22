@@ -3,16 +3,20 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+
+/* Global box-sizing setting for all elements to have padding and border included in the width and height, inherited from the root (html) element */
 html {
   box-sizing: border-box;
 }
 
+/* Apply box-sizing to all elements and pseudo-elements in the document */
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
+/* Style the body element with a specified color, background-color, font-size, and font-family */
 body {
   color: #45433c;
   background-color: #f4f1ec;
@@ -20,6 +24,7 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+/* Importing different variations (weight, style) of the "Source Sans 3" font from a remote source */
 @font-face {
   font-family: "Source Sans 3";
   font-style: normal;
@@ -52,13 +57,14 @@ body {
     format("truetype");
 }
 
+/* Using the Bungee font for all spans within the nav element */
 nav span {
   font-family: "Bungee", sans-serif;
 }
 
+/* Setting the width and centering the main container, and giving it a background color */
 main.container {
   width: 90%;
   margin: 0 auto;
   background-color: #f4f1ec;
 }
-
