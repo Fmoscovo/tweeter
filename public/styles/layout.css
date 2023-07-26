@@ -69,6 +69,14 @@ main.container {
   background-color: #f4f1ec;
 }
 
+body,
+nav,
+.header-container,
+main.container {
+  /* Add a transition to these elements */
+  transition: padding 0.3s ease, margin 0.3s ease;
+}
+
 @media only screen and (min-width: 1024px) {
   /* The body is now a grid container with two columns. */
   body {
