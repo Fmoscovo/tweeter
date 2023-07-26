@@ -165,7 +165,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 478px) {
+@media only screen and (min-width: 320px) and (max-width: 420px) {
   nav {
     flex-direction: column;
     justify-content: center;
@@ -182,4 +182,79 @@ nav {
   .icon-container {
     margin: 5px 0; /* Add some vertical margin to these items */
   }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  nav {
+    flex-direction: row; /* keep nav items in a row */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .logo {
+    font-size: 24px; /* reduce size of logo */
+  }
+
+  .compose-button {
+    width: auto;
+    padding: 5px; /* reduce padding of button */
+    font-size: 12px; /* reduce font size of button text */
+    margin: 0 10px; /* adjust margin as needed */
+  }
+
+  .icon-container {
+    margin: 0 5px; /* Add some horizontal margin to these items */
+  }
+}
+
+/* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    flex-direction: row; /* nav items will be arranged in a row */
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+
+  .compose-button {
+    margin: 0; /* Reset the margins from the smartphone styles */
+  }
+
+  .logo,
+  .icon-container {
+    margin: 0; /* Reset the margins from the smartphone styles */
+  }
+}
+
+/* Another tablet breakpoint is maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  /* The same styles from the previous query would apply here since 1024px is the max-width in both */
+}
+
+/* Another tablet breakpoint is minimum width of 768px */
+@media only screen and (min-width: 768px) {
+  /* The same styles from the previous tablet query would apply here since 768px is the min-width in both */
+}
+
+/* Laptops / Desktops: minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  nav {
+    flex-direction: row; /* nav items will be arranged in a row */
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+
+  .compose-button {
+    margin: 0; /* Reset the margins from the smartphone styles */
+  }
+
+  .logo,
+  .icon-container {
+    margin: 0; /* Reset the margins from the smartphone styles */
+  }
+}
+
+/* Laptops / Desktops: minimum width of 960px */
+@media only screen and (min-width: 960px) {
+  /* The same styles from the previous laptop/desktop query would apply here since 960px is the min-width in both */
 }

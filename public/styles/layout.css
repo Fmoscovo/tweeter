@@ -64,7 +64,7 @@ nav span {
 
 /* Setting the width and centering the main container, and giving it a background color */
 main.container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   background-color: #f4f1ec;
 }
@@ -75,6 +75,34 @@ nav,
 main.container {
   /* Add a transition to these elements */
   transition: padding 0.3s ease, margin 0.3s ease;
+}
+
+/* Smartphones: minimum width of 320px to maximum width of around 420px */
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  body {
+    font-size: 14px; /* Reduced font size */
+  }
+
+  /* Use padding to reduce overall size and create some space around */
+  main.container,
+  .header-container {
+    width: 90%; /* Reduced width */
+    padding: 10px; /* Padding around container */
+  }
+
+  /* Adjustments can also be made to specific elements to better fit small screens, like reducing the size of headers, images, etc. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 0.8em; /* 80% of the current font size */
+  }
+
+  img {
+    max-width: 100%; /* Ensures images aren't larger than their container */
+  }
 }
 
 @media only screen and (min-width: 1024px) {
