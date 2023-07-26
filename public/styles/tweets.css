@@ -7,6 +7,9 @@
   padding: 10px;
   background-color: transparent;
   font-family: "Source Sans 3", sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 /* Basic styling for each tweet */
