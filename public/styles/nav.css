@@ -113,148 +113,58 @@ nav {
 .move-right {
   margin-top: 5px;
 }
-
 /* Adjustments for mobile screens */
 @media only screen and (max-width: 768px) {
-  /* Adjusting the icon container */
-  .icon-container {
-    margin-left: 50px;
+  nav {
+    padding: 0 1em;
   }
 
-  /* Adjusting the write-tweet class */
-  .write-tweet {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Adjusting the compose button */
+  .logo,
+  .icon-container,
   .compose-button {
-    margin-top: 10px;
+    margin: 0;
   }
 }
 
 /* Adjustments for extra small devices */
-@media only screen and (max-width: 768px) {
-  /* Adjusting the navigation bar */
-  .nav {
-    height: 70px;
-    padding: 0 1em;
-  }
-
-  /* Adjusting the logo */
-  .logo {
-    font-size: 28px;
-  }
-
-  /* Adjusting the icon container */
-  .icon-container {
-    margin-left: 20px;
-  }
-
-  /* Adjusting the elements within the write-tweet class */
-  .write-tweet > * {
-    margin-bottom: 5px;
-    margin-top: 0;
-    margin-right: 1em;
-  }
-
-  /* Adjusting the compose button */
-  .compose-button {
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
+    padding: 0 0.5em;
   }
 
   .compose-button {
-    width: auto;
-    margin: 10px 0;
+    margin-left: 5px;
+    padding: 5px 10px;
   }
 
   .logo,
   .icon-container {
-    margin: 5px 0; /* Add some vertical margin to these items */
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 420px) {
-  nav {
-    flex-direction: row; /* keep nav items in a row */
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .logo {
-    font-size: 24px; /* reduce size of logo */
-  }
-
-  .compose-button {
-    width: auto;
-    padding: 5px; /* reduce padding of button */
-    font-size: 12px; /* reduce font size of button text */
-    margin: 0 10px; /* adjust margin as needed */
-  }
-
-  .icon-container {
-    margin: 0 5px; /* Add some horizontal margin to these items */
+    margin: 0;
   }
 }
 
 /* Tablet: minimum width of 768px to maximum width of 1024px */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
-    flex-direction: row; /* nav items will be arranged in a row */
-    justify-content: space-between;
     padding: 0 1em;
   }
 
-  .compose-button {
-    margin: 0; /* Reset the margins from the smartphone styles */
-  }
-
+  .compose-button,
   .logo,
   .icon-container {
-    margin: 0; /* Reset the margins from the smartphone styles */
+    margin: 0;
   }
-}
-
-/* Another tablet breakpoint is maximum width of 1024px */
-@media only screen and (max-width: 1024px) {
-  /* The same styles from the previous query would apply here since 1024px is the max-width in both */
-}
-
-/* Another tablet breakpoint is minimum width of 768px */
-@media only screen and (min-width: 768px) {
-  /* The same styles from the previous tablet query would apply here since 768px is the min-width in both */
 }
 
 /* Laptops / Desktops: minimum width of 1024px */
 @media only screen and (min-width: 1024px) {
   nav {
-    flex-direction: row; /* nav items will be arranged in a row */
-    justify-content: space-between;
     padding: 0 1.5em;
   }
 
-  .compose-button {
-    margin: 0; /* Reset the margins from the smartphone styles */
-  }
-
+  .compose-button,
   .logo,
   .icon-container {
-    margin: 0; /* Reset the margins from the smartphone styles */
+    margin: 0;
   }
-}
-
-/* Laptops / Desktops: minimum width of 960px */
-@media only screen and (min-width: 960px) {
-  /* The same styles from the previous laptop/desktop query would apply here since 960px is the min-width in both */
 }
